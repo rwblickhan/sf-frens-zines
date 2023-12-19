@@ -5,17 +5,27 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="sf frens zines">
   <main>
     <h1>sf frens zines</h1>
+    <ul>
+      <li>
+        <a
+          href="https://drive.google.com/file/d/16wuek5qQXNUG3INnDNmAxqr4dm8Rny0c/view"
+          >Edition 01</a
+        >
+      </li>
+    </ul>
   </main>
 </Layout>
 
 <style>
   main {
-    background: linear-gradient(to bottom, #ff99cc, #ff6699);
-    margin: 0;
-    height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
+  }
+
+  ul {
+    list-style: lower-greek;
   }
 </style>
