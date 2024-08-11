@@ -30,15 +30,34 @@ import Layout from "../layouts/Layout.astro";
       </li>
     </ul>
 
-    <p>
-      <a href="https://forms.gle/DbRRmbTBYhJ9fm5B8">Sign up</a> to hear about future
-      events
-    </p>
+    <form
+      action="https://buttondown.email/api/emails/embed-subscribe/sf-frens"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://buttondown.email/sf-frens', 'popupwindow')"
+      class="embeddable-buttondown-form"
+    >
+      <label for="bd-email">Sign up to hear about future events:</label>
+      <input
+        type="email"
+        name="email"
+        id="bd-email"
+        placeholder="Your email here!"
+      />
+
+      <input type="submit" value="Subscribe" />
+    </form>
   </main>
 
   <style>
     ul {
       list-style: lower-greek;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
     }
   </style>
 </Layout>
