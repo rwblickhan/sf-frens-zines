@@ -1,5 +1,7 @@
 # sf frens zines
 
+Live at https://sf-frens.org/
+
 ## Building
 
 ```sh
