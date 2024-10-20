@@ -5,7 +5,6 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="sf frens zines">
   <main>
     <h1>sf frens zines</h1>
-    <p>Submissions for zine 3 are now closed.</p>
     <p>
       Follow us on <a href="https://www.instagram.com/sf_frens/">Instagram</a> for
       updates on zine 4!
@@ -14,42 +13,29 @@ import Layout from "../layouts/Layout.astro";
       <li><a href="/issue1">Edition 01</a></li>
       <li><a href="/issue2">Edition 02</a></li>
       <li><a href="/issue3">Edition 03</a></li>
+      <li><a href="/issue4">Edition 04</a></li>
       <li>
         <a href="https://forms.gle/qoe1t5rvvsbk7RBq7">Request</a> reprints
+      </li>
+      <li>
+        <a href="https://forms.gle/ZmWT4pNB8EmpwQiN9">Sign up</a> to submit for future
+        issues
       </li>
       <li>
         <a href="mailto:inquiries@sf-frens.org">Email us</a> for general inquiries
       </li>
     </ul>
 
-    <form
-      action="https://buttondown.email/api/emails/embed-subscribe/sf-frens"
-      method="post"
-      target="popupwindow"
-      onsubmit="window.open('https://buttondown.email/sf-frens', 'popupwindow')"
-      class="embeddable-buttondown-form"
-    >
-      <label for="bd-email">Sign up to hear about future events:</label>
-      <input
-        type="email"
-        name="email"
-        id="bd-email"
-        placeholder="Your email here!"
-      />
+    <style>
+      ul {
+        list-style: lower-greek;
+      }
 
-      <input type="submit" value="Subscribe" />
-    </form>
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+    </style>
   </main>
-
-  <style>
-    ul {
-      list-style: lower-greek;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-  </style>
 </Layout>
